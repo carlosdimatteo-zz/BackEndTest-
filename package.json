@@ -1,0 +1,24 @@
+{
+  "name": "backendtest",
+  "version": "1.0.0",
+  "description": "a back end test for user submission",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlosdimatteo/BackEndTest-.git"
+  },
+  "author": "Carlos Di Matteo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carlosdimatteo/BackEndTest-/issues"
+  },
+  "homepage": "https://github.com/carlosdimatteo/BackEndTest-#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "nodemon": "^1.19.0",
+    "pg-promise": "^8.7.2"
+  }
+}
