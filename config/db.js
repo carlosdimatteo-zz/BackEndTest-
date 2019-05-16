@@ -94,6 +94,18 @@ module.exports.dbOps = {
             })
         },
 
+        removeInterests:(userId)=>{
+            return new Promise((resolve,reject)=>{
+                db.none(queries.userInfoQueries.removeInterests,[userId]).then((data)=>{
+                    console.log('succesfully removed user interests')
+                    resolve(true)
+                }).catch((err)=>{
+                    console.log('could not delete user interests',err)
+                    reject(err)
+                })
+            })
+        }
+
 
 
     },

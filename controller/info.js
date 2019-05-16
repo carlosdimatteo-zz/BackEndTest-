@@ -53,6 +53,15 @@ router.delete('/',(req,res)=>{
     res.status(400).send({status:400,data:{success:false},message:err})
     })
 })
+router.delete('/interests',(req,res)=>{
+    let userId = req.query.id
+    console.log('recieved a delete request to info endpoint with parameter id : ',userId)
+    dbOps.infoOps.removeInterests(userId).then((data)=>{
+    res.status(200).send({status:200,data:data,message:'succesfully removed user interests '})
+}).catch((err)=>{
+    res.status(400).send({status:400,data:{success:false},message:err})
+    })
+})
 
 
 
