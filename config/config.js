@@ -1,4 +1,4 @@
 const config = {
-    url: 'postgres://postgres:cps2018@localhost:5432/ClotheSearch'
+    url: 'postgres://postgres:masterkey@localhost:5432/BackEndTest'
   }
   module.exports = config
